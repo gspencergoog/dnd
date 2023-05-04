@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drag and Drop Example</title>
+    <style>
+        #drop-area {
+            width: 400px;
+            height: 400px;
+            border: 2px dashed #ccc;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="drop-area">Drag and drop files here</div>
+
+    <script>
+        const dropArea = document.getElementById('drop-area');
+
+        // Prevent default drag behaviors
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropArea.addEventListener(eventName, (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+            }, false);
+        });
+
+        // Highlight drop area when item is dragged over it
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropArea.addEventListener(eventName, () => {
+                dropArea.classList.add('highlight');
+            }, false);
+        });
+
+        // Remove highlight when item is dragged out of drop area
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropArea.addEventListener(eventName, () => {
+                dropArea.classList.remove('highlight');
+            }, false);
+        });
+
+        // Handle dropped items
+        dropArea.addEventListener('drop', (e) => {
+            const files = e.dataTransfer.files;
+            for (let i = 0; i < files.length; i++) {
+                console.log('File dropped onto the page:', files[i].name);
+            }
+        }, false);
+    </script>
+</body>
+</html>
