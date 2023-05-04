@@ -4,7 +4,7 @@
 static void on_drag_data_get(GtkWidget* widget, GdkDragContext* context,
                              GtkSelectionData* selection_data, guint info, guint time, gpointer user_data)
 {
-    gchar* filename = (gchar*)user_data;
+    const gchar* filename = (gchar*)user_data;
     gtk_selection_data_set(selection_data, gtk_selection_data_get_target(selection_data), sizeof(gchar*),
                            (const guchar*)filename, strlen(filename));
 }
@@ -16,8 +16,9 @@ gboolean on_drag_button_press(GtkWidget* widget, GdkEventButton* event, gpointer
     gint x = static_cast<gint>(event->x);
     gint y = static_cast<gint>(event->y);
 
-    GdkAtom target_atom = gdk_atom_intern(target_entry.target, TRUE);
-    GdkDragContext* drag_context = gtk_drag_begin_with_coordinates(widget, target_list, GDK_ACTION_COPY, 1, target_atom, event->time, (GdkEvent *)event, x, y);
+    std::cerr << "Received button press at " << x << ", " << y << std::endl;
+
+    GdkDragContext* drag_context = gtk_drag_begin_with_coordinates(widget, target_list, GDK_ACTION_COPY, event->button, (GdkEvent *)event, x, y);
 
     g_object_set_data(G_OBJECT(drag_context), "filename", const_cast<gchar*>(filename));
     gtk_target_list_unref(target_list);
@@ -34,10 +35,18 @@ int main(int argc, char* argv[])
     gtk_init(&argc, &argv);
 
     GtkWidget* window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+    gtk_widget_set_size_request(window, 400, 400);
+
     GtkWidget* label = gtk_label_new(argv[1]);
     gtk_container_add(GTK_CONTAINER(window), label);
 
+    // Specify the drag source targets and actions
     gtk_drag_source_set(label, GDK_BUTTON1_MASK, nullptr, 0, GDK_ACTION_COPY);
+
+    // Specify the drag destination targets and actions
+    gtk_drag_dest_set(label, GTK_DEST_DEFAULT_ALL, nullptr, 0, GDK_ACTION_COPY);
+
+    // Connect the signal handlers for drag events
     g_signal_connect(label, "drag-data-get", G_CALLBACK(on_drag_data_get), argv[1]);
     g_signal_connect(label, "button-press-event", G_CALLBACK(on_drag_button_press), argv[1]);
 
@@ -47,4 +56,3 @@ int main(int argc, char* argv[])
 
     return 0;
 }
-

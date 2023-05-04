@@ -1,16 +1,19 @@
-cmake_minimum_required(VERSION 3.10)
-find_package(GTK REQUIRED)
+cmake_minimum_required(VERSION 3.5)
 
 project(dnd)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 11)
 
-find_package(GTK REQUIRED)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GTK3 REQUIRED gtk+-3.0)
 
-include_directories(${GTK_INCLUDE_DIRS})
+include_directories(${GTK3_INCLUDE_DIRS})
+link_directories(${GTK3_LIBRARY_DIRS})
+
+add_compile_options(${GTK3_CFLAGS_OTHER})
 
 add_executable(dnd_source dnd_source.cpp)
-target_link_libraries(dnd_source PRIVATE GTK::gtkmm)
+target_link_libraries(dnd_source ${GTK3_LIBRARIES})
 
 add_executable(dnd_dest dnd_dest.cpp)
-target_link_libraries(dnd_dest PRIVATE GTK::gtkmm)
+target_link_libraries(dnd_dest ${GTK3_LIBRARIES})
