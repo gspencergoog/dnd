@@ -1,0 +1,15 @@
+executable("dnd_source") {
+  sources = [ "dnd_source.cpp" ]
+  deps = [ "//third_party/gtkmm" ]
+  cflags = [ "-std=c++17" ]
+  linkopts = [ "-lgtkmm-3.0" ]
+}
+
+# The dnd_dest target is defined as follows:
+
+executable("dnd_dest") {
+  sources = [ "dnd_dest.cpp" ]
+  deps = [ "//third_party/gtkmm" ]
+  cflags = [ "-std=c++17" ]
+  linkopts = [ "-lgtkmm-3.0" ]
+}

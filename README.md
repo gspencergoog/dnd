@@ -1,3 +1,1 @@
-# dnd
-
-Drag and Drop examples for various platforms.
+A Drag and Drop example for Linux, one for a DND source, one for a destination.
