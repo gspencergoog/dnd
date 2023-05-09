@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27DAEB8C2A01D71E0005E96B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DAEB8B2A01D71E0005E96B /* AppDelegate.m */; };
+		27DAEB8F2A01D71E0005E96B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DAEB8E2A01D71E0005E96B /* ViewController.m */; };
+		27DAEB912A01D71F0005E96B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27DAEB902A01D71F0005E96B /* Assets.xcassets */; };
+		27DAEB942A01D71F0005E96B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DAEB922A01D71F0005E96B /* Main.storyboard */; };
+		27DAEB962A01D71F0005E96B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DAEB952A01D71F0005E96B /* main.m */; };
+		27DAEBA12A01D71F0005E96B /* File_DropperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DAEBA02A01D71F0005E96B /* File_DropperTests.m */; };
+		27DAEBAB2A01D71F0005E96B /* File_DropperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DAEBAA2A01D71F0005E96B /* File_DropperUITests.m */; };
+		27DAEBAD2A01D71F0005E96B /* File_DropperUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DAEBAC2A01D71F0005E96B /* File_DropperUITestsLaunchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27DAEB9D2A01D71F0005E96B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27DAEB7F2A01D71E0005E96B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27DAEB862A01D71E0005E96B;
+			remoteInfo = "File Dropper";
+		};
+		27DAEBA72A01D71F0005E96B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27DAEB7F2A01D71E0005E96B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27DAEB862A01D71E0005E96B;
+			remoteInfo = "File Dropper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27DAEB872A01D71E0005E96B /* File Dropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "File Dropper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DAEB8A2A01D71E0005E96B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		27DAEB8B2A01D71E0005E96B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		27DAEB8D2A01D71E0005E96B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		27DAEB8E2A01D71E0005E96B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		27DAEB902A01D71F0005E96B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27DAEB932A01D71F0005E96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27DAEB952A01D71F0005E96B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27DAEB972A01D71F0005E96B /* File_Dropper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = File_Dropper.entitlements; sourceTree = "<group>"; };
+		27DAEB9C2A01D71F0005E96B /* File DropperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "File DropperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DAEBA02A01D71F0005E96B /* File_DropperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = File_DropperTests.m; sourceTree = "<group>"; };
+		27DAEBA62A01D71F0005E96B /* File DropperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "File DropperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DAEBAA2A01D71F0005E96B /* File_DropperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = File_DropperUITests.m; sourceTree = "<group>"; };
+		27DAEBAC2A01D71F0005E96B /* File_DropperUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = File_DropperUITestsLaunchTests.m; sourceTree = "<group>"; };
+		27DAEBB92A01EBE00005E96B /* File-Dropper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "File-Dropper-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27DAEB842A01D71E0005E96B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DAEB992A01D71F0005E96B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DAEBA32A01D71F0005E96B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27DAEB7E2A01D71E0005E96B = {
+			isa = PBXGroup;
+			children = (
+				27DAEB892A01D71E0005E96B /* File Dropper */,
+				27DAEB9F2A01D71F0005E96B /* File DropperTests */,
+				27DAEBA92A01D71F0005E96B /* File DropperUITests */,
+				27DAEB882A01D71E0005E96B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27DAEB882A01D71E0005E96B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27DAEB872A01D71E0005E96B /* File Dropper.app */,
+				27DAEB9C2A01D71F0005E96B /* File DropperTests.xctest */,
+				27DAEBA62A01D71F0005E96B /* File DropperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27DAEB892A01D71E0005E96B /* File Dropper */ = {
+			isa = PBXGroup;
+			children = (
+				27DAEBB92A01EBE00005E96B /* File-Dropper-Info.plist */,
+				27DAEB8A2A01D71E0005E96B /* AppDelegate.h */,
+				27DAEB8B2A01D71E0005E96B /* AppDelegate.m */,
+				27DAEB8D2A01D71E0005E96B /* ViewController.h */,
+				27DAEB8E2A01D71E0005E96B /* ViewController.m */,
+				27DAEB902A01D71F0005E96B /* Assets.xcassets */,
+				27DAEB922A01D71F0005E96B /* Main.storyboard */,
+				27DAEB952A01D71F0005E96B /* main.m */,
+				27DAEB972A01D71F0005E96B /* File_Dropper.entitlements */,
+			);
+			path = "File Dropper";
+			sourceTree = "<group>";
+		};
+		27DAEB9F2A01D71F0005E96B /* File DropperTests */ = {
+			isa = PBXGroup;
+			children = (
+				27DAEBA02A01D71F0005E96B /* File_DropperTests.m */,
+			);
+			path = "File DropperTests";
+			sourceTree = "<group>";
+		};
+		27DAEBA92A01D71F0005E96B /* File DropperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27DAEBAA2A01D71F0005E96B /* File_DropperUITests.m */,
+				27DAEBAC2A01D71F0005E96B /* File_DropperUITestsLaunchTests.m */,
+			);
+			path = "File DropperUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27DAEB862A01D71E0005E96B /* File Dropper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DAEBB02A01D71F0005E96B /* Build configuration list for PBXNativeTarget "File Dropper" */;
+			buildPhases = (
+				27DAEB832A01D71E0005E96B /* Sources */,
+				27DAEB842A01D71E0005E96B /* Frameworks */,
+				27DAEB852A01D71E0005E96B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "File Dropper";
+			productName = "File Dropper";
+			productReference = 27DAEB872A01D71E0005E96B /* File Dropper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27DAEB9B2A01D71F0005E96B /* File DropperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DAEBB32A01D71F0005E96B /* Build configuration list for PBXNativeTarget "File DropperTests" */;
+			buildPhases = (
+				27DAEB982A01D71F0005E96B /* Sources */,
+				27DAEB992A01D71F0005E96B /* Frameworks */,
+				27DAEB9A2A01D71F0005E96B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27DAEB9E2A01D71F0005E96B /* PBXTargetDependency */,
+			);
+			name = "File DropperTests";
+			productName = "File DropperTests";
+			productReference = 27DAEB9C2A01D71F0005E96B /* File DropperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27DAEBA52A01D71F0005E96B /* File DropperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DAEBB62A01D71F0005E96B /* Build configuration list for PBXNativeTarget "File DropperUITests" */;
+			buildPhases = (
+				27DAEBA22A01D71F0005E96B /* Sources */,
+				27DAEBA32A01D71F0005E96B /* Frameworks */,
+				27DAEBA42A01D71F0005E96B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27DAEBA82A01D71F0005E96B /* PBXTargetDependency */,
+			);
+			name = "File DropperUITests";
+			productName = "File DropperUITests";
+			productReference = 27DAEBA62A01D71F0005E96B /* File DropperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27DAEB7F2A01D71E0005E96B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					27DAEB862A01D71E0005E96B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					27DAEB9B2A01D71F0005E96B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 27DAEB862A01D71E0005E96B;
+					};
+					27DAEBA52A01D71F0005E96B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 27DAEB862A01D71E0005E96B;
+					};
+				};
+			};
+			buildConfigurationList = 27DAEB822A01D71E0005E96B /* Build configuration list for PBXProject "File Dropper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27DAEB7E2A01D71E0005E96B;
+			productRefGroup = 27DAEB882A01D71E0005E96B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27DAEB862A01D71E0005E96B /* File Dropper */,
+				27DAEB9B2A01D71F0005E96B /* File DropperTests */,
+				27DAEBA52A01D71F0005E96B /* File DropperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27DAEB852A01D71E0005E96B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DAEB912A01D71F0005E96B /* Assets.xcassets in Resources */,
+				27DAEB942A01D71F0005E96B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DAEB9A2A01D71F0005E96B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DAEBA42A01D71F0005E96B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27DAEB832A01D71E0005E96B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DAEB8F2A01D71E0005E96B /* ViewController.m in Sources */,
+				27DAEB962A01D71F0005E96B /* main.m in Sources */,
+				27DAEB8C2A01D71E0005E96B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DAEB982A01D71F0005E96B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DAEBA12A01D71F0005E96B /* File_DropperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DAEBA22A01D71F0005E96B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DAEBAD2A01D71F0005E96B /* File_DropperUITestsLaunchTests.m in Sources */,
+				27DAEBAB2A01D71F0005E96B /* File_DropperUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27DAEB9E2A01D71F0005E96B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27DAEB862A01D71E0005E96B /* File Dropper */;
+			targetProxy = 27DAEB9D2A01D71F0005E96B /* PBXContainerItemProxy */;
+		};
+		27DAEBA82A01D71F0005E96B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27DAEB862A01D71E0005E96B /* File Dropper */;
+			targetProxy = 27DAEBA72A01D71F0005E96B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27DAEB922A01D71F0005E96B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27DAEB932A01D71F0005E96B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27DAEBAE2A01D71F0005E96B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		27DAEBAF2A01D71F0005E96B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		27DAEBB12A01D71F0005E96B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "File Dropper/File_Dropper.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8QB4VV633;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "File-Dropper-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.flutter.File-Dropper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		27DAEBB22A01D71F0005E96B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "File Dropper/File_Dropper.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8QB4VV633;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "File-Dropper-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.flutter.File-Dropper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		27DAEBB42A01D71F0005E96B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8QB4VV633;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.flutter.File-DropperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/File Dropper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/File Dropper";
+			};
+			name = Debug;
+		};
+		27DAEBB52A01D71F0005E96B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8QB4VV633;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.flutter.File-DropperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/File Dropper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/File Dropper";
+			};
+			name = Release;
+		};
+		27DAEBB72A01D71F0005E96B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8QB4VV633;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.flutter.File-DropperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = "File Dropper";
+			};
+			name = Debug;
+		};
+		27DAEBB82A01D71F0005E96B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8QB4VV633;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.flutter.File-DropperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = "File Dropper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27DAEB822A01D71E0005E96B /* Build configuration list for PBXProject "File Dropper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DAEBAE2A01D71F0005E96B /* Debug */,
+				27DAEBAF2A01D71F0005E96B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27DAEBB02A01D71F0005E96B /* Build configuration list for PBXNativeTarget "File Dropper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DAEBB12A01D71F0005E96B /* Debug */,
+				27DAEBB22A01D71F0005E96B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27DAEBB32A01D71F0005E96B /* Build configuration list for PBXNativeTarget "File DropperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DAEBB42A01D71F0005E96B /* Debug */,
+				27DAEBB52A01D71F0005E96B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27DAEBB62A01D71F0005E96B /* Build configuration list for PBXNativeTarget "File DropperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DAEBB72A01D71F0005E96B /* Debug */,
+				27DAEBB82A01D71F0005E96B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27DAEB7F2A01D71E0005E96B /* Project object */;
+}
